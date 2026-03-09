@@ -132,11 +132,6 @@ h6,
 
 /* Buttons */
 
-button {
-  cursor: pointer;
-  border: none;
-}
-
 .btn {
   display: inline-flex;
   align-items: center;
