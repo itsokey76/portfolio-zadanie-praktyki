@@ -1,0 +1,32 @@
+.tag {
+  display: inline-flex;
+  border: var(--border-primary);
+  background-color: var(--color-bg-secondary);
+  border-radius: 100px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.tag svg {
+  width: 12px;
+  height: 12px;
+}
+
+.tag__country {
+  width: 20px;
+  margin: 2px 0;
+  /* height: 12px; */
+}
+
+.tag__text {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  color: var(--color-text-tag);
+  line-height: var(--line-height-xl);
+}
+
+.tag:has(.tag__country) {
+  border-radius: 14px;
+  gap: 12px;
+}

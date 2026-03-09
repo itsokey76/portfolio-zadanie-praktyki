@@ -1,0 +1,12 @@
+.status-tag {
+  color: var(--color-text-accent);
+  background-color: var(--color-bg-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-status-tag-process);
+
+  display: inline-flex;
+}

@@ -1,0 +1,41 @@
+.hero {
+  min-height: 100dvh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__container {
+  z-index: 1;
+  max-width: 768px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.hero__description {
+  opacity: 0.6;
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  margin-top: var(--spacing-sm);
+}
+
+.hero__bg {
+  position: absolute;
+  z-index: 0;
+  width: 500px;
+  height: 500px;
+  background: var(--gradient-bg-glow);
+  filter: blur(120px);
+  border-radius: var(--border-radius-pill);
+}

@@ -1,0 +1,56 @@
+.about__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 130px;
+}
+
+@media (max-width: 1024px) {
+  .about__wrapper {
+    gap: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about__img {
+    margin: 0 auto;
+  }
+}
+
+.about__img {
+  width: 434px; /* Фиксированная ширина контейнера */
+  height: 581px;
+  max-width: 100%; /* Контейнер может сжиматься */
+}
+
+.about__img img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+
+  /* object-fit: cover;  */
+}
+
+.about__content {
+  display: grid;
+  row-gap: 18px;
+}
+
+.about__skills-wrapper {
+  display: grid;
+  row-gap: var(--spacing-lg);
+}
+
+.about__skills-list {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+}
+
+.about__skill {
+  display: grid;
+  row-gap: var(--spacing-sm);
+}
