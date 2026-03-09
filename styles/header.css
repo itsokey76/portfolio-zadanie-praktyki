@@ -70,9 +70,7 @@
 
 .header.active .header__burger-line {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* top: 50%; */
 }
 
 .header.active .header__burger-line:first-child {

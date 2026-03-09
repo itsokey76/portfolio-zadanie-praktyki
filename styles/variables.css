@@ -82,3 +82,9 @@
   --mobile: 768px;
   --mobile-s: 480px;
 }
+
+@media (max-width: 1440px) {
+  :root {
+    --container-padding: 32px;
+  }
+}

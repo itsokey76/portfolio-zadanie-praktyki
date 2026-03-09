@@ -26,6 +26,13 @@ h1,
   line-height: var(--line-height-normal);
 }
 
+@media (max-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+  }
+}
+
 h2,
 .h2 {
   font-size: var(--font-size-h2);
