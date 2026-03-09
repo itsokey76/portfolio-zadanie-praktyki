@@ -19,7 +19,7 @@
     <title>Moje Portfolio</title>
   </head>
   <body>
-    <header class="header active">
+    <header class="header">
       <div class="header__container">
         <h3 class="header__label text-gradient-primary"><a href="#">PORTFOLIO</a></h3>
         <nav class="header__nav">
@@ -27,7 +27,7 @@
             <li class="header__nav-list-item"><a href="#about">O mnie</a></li>
             <li class="header__nav-list-item"><a href="#projects">Projekty</a></li>
             <li class="header__nav-list-item"><a href="#socials">Sociale</a></li>
-            <li class="header__nav-list-item"><a href="#contacts">Kontakty</a></li>
+            <li class="header__nav-list-item"><a href="#footer">Kontakty</a></li>
           </ul>
           <button class="header__burger-btn">
             <div class="header__burger-line"></div>
@@ -50,7 +50,7 @@
             </p>
           </div>
           <div class="hero__buttons">
-            <button class="btn btn-primary">Moje projekty</button>
+            <a href="#projects" class="btn btn-primary">Moje projekty</a>
             <button class="btn btn-secondary">Pobrać CV</button>
           </div>
         </div>
@@ -529,11 +529,11 @@
             <h2>Moje <span class="text-gradient-primary">Projekty</span></h2>
           </div>
           <div class="projects__cards">
-            <div class="card">
+            <a href="https://github.com/itsokey76/coffe-shop-landing" class="card">
               <div class="card__preview">
                 <div class="card__stack-wrapper">
                   <div class="card__tag">HTML</div>
-                  <div class="card__tag">SCSS</div>
+                  <div class="card__tag">CSS</div>
                 </div>
                 <img class="card__img" src="./imgs/my-projects/project1.jpg" alt="card-img-label" />
               </div>
@@ -545,8 +545,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
+            </a>
+            <a href="https://github.com/itsokey76/positivus-landing" class="card">
               <div class="card__preview">
                 <div class="card__stack-wrapper">
                   <div class="card__tag">HTML</div>
@@ -563,8 +563,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
+            </a>
+            <a href="https://github.com/itsokey76/future-tech" class="card">
               <div class="card__preview">
                 <div class="card__stack-wrapper">
                   <div class="card__tag">HTML</div>
@@ -584,7 +584,7 @@
                   <span class="status-tag__text">W procesie</span>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -809,7 +809,7 @@
               <li class="footer__list-item"><a href="#">Home</a></li>
               <li class="footer__list-item"><a href="#about">O mnie</a></li>
               <li class="footer__list-item"><a href="#projects">Projekty</a></li>
-              <li class="footer__list-item"><a href="#contacts">Kontakty</a></li>
+              <li class="footer__list-item"><a href="#footer">Kontakty</a></li>
             </ul>
           </div>
           <div class="footer__list">
@@ -902,9 +902,22 @@
               <li class="footer__list-item">
                 Bądź na bieżąco z moimi najnowszymi projektami i aktualnościami.
               </li>
-              <li class="footer__list-item footer__list-item-input">
-                <input autocomplete="on" id="email" type="text" placeholder="Wpisz swój email" />
-                <button for="email"></button>
+              <li class="footer__list-item">
+                <form
+                  class="footer__list-item-input"
+                  id="my-form"
+                  action="https://script.google.com/macros/s/AKfycbxBMrkfzomVtyoerd_FIppdckzKFTfisWqK1jKtzGqQyL3TE_LuRU6Jw9lY7TwqqsZL/exec"
+                  method="POST"
+                >
+                  <input
+                    autocomplete="on"
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Wpisz swój email"
+                  />
+                  <button type="submit"></button>
+                </form>
               </li>
             </ul>
           </div>
@@ -915,5 +928,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
