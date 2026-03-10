@@ -1,7 +1,5 @@
 // Burger menu
 
-console.log('hello');
-
 const burgerBtn = document.querySelector('.header__burger-btn');
 const header = document.querySelector('.header');
 const links = document.querySelectorAll('.header__nav-list-item a');
@@ -38,8 +36,6 @@ form.addEventListener('submit', async (e) => {
     });
 
     const data = await response.json();
-
-    console.log('Данные от сервера:', data);
 
     if (data.result === 'success') {
       alert('Email został wysłany!');
