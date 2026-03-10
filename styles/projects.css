@@ -1,6 +1,6 @@
 .projects__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 368px));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 368px));
   gap: var(--spacing-md);
   justify-content: center;
 }
