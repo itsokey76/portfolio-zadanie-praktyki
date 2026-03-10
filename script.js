@@ -19,9 +19,11 @@ links.forEach((link) => {
 // Submit Email
 
 const form = document.getElementById('my-form');
+const submitBtn = form.querySelector('.footer__list-item-input-btn');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+  submitBtn.disabled = true;
 
   try {
     const formData = new FormData(form);
@@ -40,5 +42,25 @@ form.addEventListener('submit', async (e) => {
     }
   } catch (error) {
     console.error('Błąd podczas wysyłania:', error);
+  } finally {
+    submitBtn.disabled = false;
   }
+});
+
+// Smooth link scroll
+
+const landingLinks = document.querySelectorAll('a[href^="#"]');
+
+landingLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+
+    window.scrollTo({
+      top: target.getBoundingClientRect().top + window.scrollY,
+      behavior: 'smooth',
+    });
+  });
 });

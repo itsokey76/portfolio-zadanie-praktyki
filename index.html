@@ -21,7 +21,7 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <h3 class="header__label text-gradient-primary"><a href="#">PORTFOLIO</a></h3>
+        <h3 class="header__label text-gradient-primary"><a href="#hero">PORTFOLIO</a></h3>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-list-item"><a href="#about">O mnie</a></li>
@@ -38,7 +38,7 @@
       </div>
     </header>
     <main>
-      <section class="section hero">
+      <section id="hero" class="section hero">
         <div class="hero__container">
           <h1>
             Tworzę strony i robię o <span class="text-gradient-primary italic">nich content</span>
@@ -791,7 +791,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__top">
           <div class="footer__description-wrapper">
@@ -806,7 +806,7 @@
           <div class="footer__list">
             <h4 class="footer__list-title">SZYBKIE LINKI</h4>
             <ul class="footer__list-items">
-              <li class="footer__list-item"><a href="#">Home</a></li>
+              <li class="footer__list-item"><a href="#hero">Home</a></li>
               <li class="footer__list-item"><a href="#about">O mnie</a></li>
               <li class="footer__list-item"><a href="#projects">Projekty</a></li>
               <li class="footer__list-item"><a href="#footer">Kontakty</a></li>
@@ -916,7 +916,7 @@
                     name="email"
                     placeholder="Wpisz swój email"
                   />
-                  <button type="submit"></button>
+                  <button class="footer__list-item-input-btn" type="submit"></button>
                 </form>
               </li>
             </ul>
