@@ -40,6 +40,13 @@ h2,
   line-height: var(--line-height-normal);
 }
 
+@media (max-width: 768px) {
+  h2,
+  .h2 {
+    font-size: 32px;
+  }
+}
+
 h3,
 .h3 {
   font-size: var(--font-size-h3);
@@ -80,6 +87,12 @@ h6,
 
 .section__header {
   margin-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+  .section__header {
+    margin-bottom: var(--spacing-lg);
+  }
 }
 
 .section__header--center {
