@@ -20,6 +20,11 @@ links.forEach((link) => {
 
 const form = document.getElementById('my-form');
 const submitBtn = form.querySelector('.footer__list-item-input-btn');
+const emailInput = form.querySelector('input[type="email"]');
+
+emailInput.addEventListener('input', () => {
+  submitBtn.disabled = !emailInput.validity.valid;
+});
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -42,8 +47,6 @@ form.addEventListener('submit', async (e) => {
     }
   } catch (error) {
     console.error('Błąd podczas wysyłania:', error);
-  } finally {
-    submitBtn.disabled = false;
   }
 });
 
