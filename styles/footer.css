@@ -1,5 +1,5 @@
 .footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--color-border-primary);
   padding: 80px 0;
 }
 
@@ -68,7 +68,7 @@
   width: 32px;
   height: 32px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--color-border-secondary);
 
   position: relative;
 }
@@ -94,8 +94,8 @@
   width: 100%;
   padding: 14px 16px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border-primary);
+  background: var(--color-border-secondary);
 
   color: rgba(255, 255, 255, 0.5);
   font-size: var(--font-size-small);

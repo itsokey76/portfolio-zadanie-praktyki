@@ -174,7 +174,7 @@ h6,
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0px 12px 20px 0px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 12px 20px 0px var(--color-border-primary);
 }
 
 .btn-secondary {
@@ -185,7 +185,7 @@ h6,
 }
 
 .btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--color-border-secondary);
   border-color: rgba(255, 255, 255, 0.4);
 }
 

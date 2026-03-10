@@ -13,6 +13,9 @@
   --color-text-tag: rgba(255, 255, 255, 0.8);
   --color-text-accent: #ff6900;
 
+  --color-border-primary: rgba(255, 255, 255, 0.1);
+  --color-border-secondary: rgba(255, 255, 255, 0.05);
+
   /* Gradients */
   --gradient-primary: linear-gradient(90deg, #ff8904 0%, #f6339a 50%, #9810fa 100%);
   --gradient-secondary: linear-gradient(90deg, #ff6900 0%, #f6339a 50%, #ad46ff 100%);
